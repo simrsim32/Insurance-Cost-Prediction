@@ -3,11 +3,11 @@ import pandas as pd
 import numpy as np
 import joblib
 
-scaler = joblib.load("scaler.pkl")
-le_gender= joblib.load("label_encoder_gender.pkl")
-le_diabetic= joblib.load("label_encoder_diabetic.pkl")
-le_smoker= joblib.load("label_encoder_smoker.pkl")
-model=joblib.load("best_model.pkl")
+scaler = joblib.load("models/scaler.pkl")
+le_gender= joblib.load("models/label_encoder_gender.pkl")
+le_diabetic= joblib.load("models/label_encoder_diabetic.pkl")
+le_smoker= joblib.load("models/label_encoder_smoker.pkl")
+model=joblib.load("models/best_model.pkl")
 
 st.set_page_config(page_title="Insurance Claim Predictor", layout="centered")
 st.title("Health Insurance Payment Prediction App")
